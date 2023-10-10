@@ -4,332 +4,530 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="style.css">
-    
-    
-    <title>Document</title>
+    <title>Evento</title>
     <script src="https://kit.fontawesome.com/20a97e812c.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
+    <!--navigation section starts here-->
     <nav class="navbar">
         <input type="checkbox" id="check">
-            <label for="check" class="check-btn">
-                <i class="fas fa-bars" id="btn"></i>
-            </label>
+        <label for="check" class="check-btn">
+            <i class="fas fa-bars" id="btn"></i>
+        </label>
         <label class ="logo">Evento</label>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#">Sign in/Register</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    
-        <header>
-            <section class="home">
-                <h2> Are You Ready To Enjoy Every Events?</h2>
-                <p>Find Events Happening Around Stockholm So You Dont't Miss The Fun Part..</p>
-            </section>
-        </header>
-       
-            <main>
-               <!--<section>
-                    <div class="scroll-container">
-                        <div class="scroll-text">BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!BOOK YOUR TICKETS!!!</div>
+    <!--header section starts here-->
+    <header>
+        <section class="header-content">
+            <h2> Are You Ready To Enjoy Every Events?</h2>
+            <p>Find Events Happening Around Stockholm So You Dont't Miss The Fun Part..</p>
+        </section>
+        <section class="form" >
+            <div class="form-content">
+                <div>
+                    <label for="email">Email-id:</label>
+                    <input type="email" placeholder="Enter you Email">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <div>
+                    <button>Sign In </button>
+                    <button>Register</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--main section starts here-->
+    <main>
+        <section class="category-container">
+            <div class="category-items">
+                <a href="#music-events" class="link">
+                    <div class="item">
+                        <div class="icon-content-wrapper">
+                            <span><i class="fas fa-music"></i></span>
+                            <div class="content">Music </div>
+                        </div>
                     </div>
-                </section>-->
-                <section class="category-container-grid">
-                    <div class="category-flex">
-                        <a href="#Music Events">
-                            <div class="link-item">
-                                <div class="icon-content-wrapper">
-                                    <span><i class="fas fa-music"></i></span>
-                                    <div class="tooltip">Music </div>
+                </a>
+                <a href="#sports-events"class="link">
+                    <div class="item">
+                        <div class="icon-content-wrapper">
+                            <span><i class="fas fa-futbol"></i></span>
+                            <div class="content">Sport Events</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#comedy-events"class="link">
+                    <div class="item">
+                        <div class="icon-content-wrapper">
+                            <span><i class="fas fa-theater-masks"></i></span>
+                            <div class="content">Comedy/talk Events</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#upcoming-events"class="link">  
+                    <div class="item">
+                        <div class="icon-content-wrapper">
+                            <span><i class="fas fa-calendar"></i></span>
+                            <div class="content">Upcoming Events</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!--main layout starts here-->
+        <div class="wrapper">
+            <div class="grid-container1">
+                <section>
+                    <h3 id="upcoming-events">Upcoming Events</h3>
+                    <div class="image-container">
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <img src="Tod-images/image1.jpg" >
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Stockholm Leadership Live Online Seminar: Managing Millennials & Gen Zers</li>
+                                        <li> Saturday, October 14 · 6 - 9pm CEST </li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#Business & Professional Events">
-                            <div class="link-item">
-                                <div class="icon-content-wrapper">
-                                    <span><i class="fas fa-calendar"></i></span>
-                                    <div class="tooltip">Business & Professional</div>
+                            <div class="gallery-item">
+                                <img src="Tod-images/image2.jpg">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Meet, Mix & Mingle with new friends! (20-40/FREE Drink/Ice Breakers)ST</li>
+                                        <li> Saturday, October 14 · 7 - 9pm CEST </li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#Food & Drink Events">
-                            <div class="link-item">
-                                <div class="icon-content-wrapper">
-                                    <span><i class="fas fa-hamburger"></i></span>
-                                    <div class="tooltip">Food & Drink</div>
+                            <div class="gallery-item">
+                                <img src="Tod-images/image3.jpg">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Stockholm Leadership: Is It A Good/Bad Idea To Be Friends With Employees?</li>
+                                        <li> Tuesday, October 10 · 5 - 5:30pm CEST </li>
+                                        <li><a href="">Read More</a></li>  
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </a>
-                        <a href="# Visual & Performing Events">  
-                            <div class="link-item">
-                                <div class="icon-content-wrapper">
-                                    <span><i class="fas fa-theater-masks"></i></span>
-                                    <div class="tooltip">Online Events</div>
+                            <div class="gallery-item">
+                                <img src="Tod-images/image4.jpg">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Stockholm Outdoor Escape Game: Troll Escape</li>
+                                        <li> Tuesday, October 10 · 4 - 5:30pm CEST </li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </a>
+                            <div class="gallery-item">
+                                <img src="Tod-images/image5.jpg">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Stockholm Outdoor Escape Game: Haunting Stories & Legends</li>
+                                        <li> Tuesday, October 10 · 4 - 5:30pm CEST </li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="Tod-images/image6.jpg">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Stockholm Outdoor Escape Game: Royal Viking</li>
+                                        <li> Tuesday, October 10 · 4 - 5:30pm CEST </li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="Tod-images/image7.jpg">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Tantra Yoga and Relationship Mastery: Igniting Intimacy and Fulfillment</li>
+                                        <li> Saturday, October 14 · 4 - 5pm CEST</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <div class="wrapper">
-                <div class="grid">
-                    <div class="grid-container1">
-                        <section>
-                            
-                                <h3>Things to do this weekend</h3>
-                                <div class="image-container" id="">
-                                <div class="gallery">
-                                    <div class="gallery-item">
-                                        <img src="Tod-images/image1.jpg" >
-                                        <div class="gallery-content">
-                                            <h2>Stockholm Outdoor Escape Game:Troll Escape</h2>
-                                            <p> Saturday • 12:00 PM 
-                                            Royal swedish opera
-                                            From £9.99
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Tod-images/image2.jpg">
-                                        <div class="gallery-content">
-                                            <h2>Stockholm Outdoor Escape Game: Haunting Stories & Legends</h2>
-                                            <p> Saturday • 12:00 PM 
-                                            Wrangel Palace
-                                            From £7.99
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Tod-images/image3.jpg">
-                                        <div class="gallery-content">
-                                            <h2>Stockholm Outdoor Escape Game: Secret Societies</h2>
-                                            <p> Saturday • 11:00 AM 
-                                            Swedish Order of Freemasons - Grand Lodge of Sweden
-                                            From £7.99
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Tod-images/image4.jpg">
-                                        <div class="gallery-content">
-                                            <h2>Stockholm Outdoor Escape Game: Royal Vikings</h2>
-                                            <p> Saturday • 12:00 PMö
-                                            The Viking Museum
-                                            From £7.99
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Tod-images/image5.jpg">
-                                        <div class="gallery-content">
-                
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Tod-images/image6.jpg">
-                                        <div class="gallery-content">
-                
-                                        </div>
-                                    </div>
+                <section class="section">
+                    <h3 id="music-events">Music Events</h3>
+                    <div class="image-container" >
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <img src="music-images/image1.webp" >
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>NOUR EL REFAI-Säger skämt i ca 75 min</li>
+                                        <li>October 13, 2023,7:00 PM</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </section>
-                                   
-                                    
-                        <section class="section">
-                            <h3>Food&Drink Events</h3>
-                            <div class="image-container">
-                                
-                                <div class="gallery">
-                                    <div class="gallery-item">
-                                        <img src="Food events -images/image1.jpg" >
-                                        <div class="gallery-content">
-                                            <h2>Bärta On Tour Stockholm</h2>
-                                            <p> Mon, 9 Oct 2023 17:30 - 20:00 CEST
-                                                Impact Hub Stockholm
-                                                Free
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Food events -images/image2.jpg">
-                                        <div class="gallery-content">
-                                            <h2>Wine Night Stand - Drink Included!</h2>
-                                            <p> Wednesday, October 11 · 6 - 8pm CEST
-                                            The Park Södra, Magnus Ladulåsgatan, Stockholm, Sweden
-                                            From kr107.49
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Food events -images/image3.jpg">
-                                        <div class="gallery-content">
-                                            <h2>Monthly Networking Drinks with the IAA Sweden</h2>
-                                            <p> tor 5 okt 2023 17:30 - 21:00 CEST
-                                                AG
-                                                37 Kronobergsgatan 112 33 Kungsholmen
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Food events -images/image4.jpg">
-                                        <div class="gallery-content">
-                                            <h2>Effortless Delicious Solo Dining _*Prawn, Mussel, Squid, Tuna</h2>
-                                            <p> Friday, October 20 · 5:20 - 7:20pm CEST
-                                            Koreanskt Kulturcenter
-                                            23 Kungsholmsgatan 112 27 Kungsholmen
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Food events -images/image5.jpg">
-                                        <div class="gallery-content">
-                                            <h2>Classic Korean Vegan Food _ *Wheat flour, Corn flour, Seaweeda</h2>
-                                            <p> Friday, October 6 · 5:20 - 7:20pm CEST
-                                                Koreanskt Kulturcenter
-                                                23 Kungsholmsgatan 112 27 Kungsholmen
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="Food events -images/image6.jpg">
-                                        <div class="gallery-content">
-                                            <h2>KR Cooking Class - GungJung TteokBokki _ *Beef</h2>
-                                            <p> Tuesday, October 10 · 5:30 - 7:30pm CEST
-                                                Koreanskt Kulturcenter
-                                                23 Kungsholmsgatan 112 27 Kungsholmen
-                                            </p>
-                                            <button>GET TICKET</button>
-                                        </div>
-                                    </div>
+                            <div class="gallery-item">
+                                <img src="music-images/image2.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>THYLACINE</li>
+                                        <li>October 13, 2023 8:00 PM</li>
+                                       <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </section>
-                        <section class="section">
-                            <h3>Business&Professional Events</h3>
-                            <div class="image-container">
-                                
-                                <div class="gallery">
-                                    <div class="gallery-item">
-                                        <img src="b&p events-images/image1.jpg" >
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="b&p events-images/image2.jpg">
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="b&p events-images/image3.jpg">
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="b&p events-images/image4.jpg">
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="b&p events-images/image5.jpg">
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="b&p events-images/image6.jpg">
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="b&p events-images/image7.jpg">
-                                    </div>
+                            <div class="gallery-item">
+                                <img src="music-images/image3.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>ALEX SOMBO</li>
+                                        <li>October 13,2023 8:00 PM</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </section>
-                        <section class="section">
-                            <h3>Online Events</h3>
-                            <div class="image-container">
-                               
-                                <div class="gallery">
-                                    <div class="gallery-item">
-                                        <img src="v&p art event-images/image1.jpg" >  
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="v&p art event-images/image2.jpg">
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="v&p art event-images/image3.jpg">
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="v&p art event-images/image4.jpg">
-                                    </div>
-                                    <div class="gallery-item">
-                                        <img src="v&p art event-images/image5.jpg">
-                                    </div>
+                            <div class="gallery-item">
+                                <img src="music-images/image4.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Black Paisley</li>
+                                        <li>October 14,2023</li>
+                                         <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </section>
-                    </div>
-                    <aside class="side-bar">
-                    
-                        Facts
-                        
-                    </aside>
-                    
-                       
-                    </div>
-                </div>
-            </main>
-            <div class="video">
-                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/PcygJTqphmQ?si=k8fiF4HKd3n49AK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            
-            <!--
-           <footer>
-                <div class="footer-container">
-                    <div class="item-container">
-                        <div class="item">
-                            <h5>Useful Links</h3>
-                            <ul>
-                                <li>About</li>
-                                <li>Services</li>
-                                <li>Contact</li>
-                                <li>Help</li>
-                                <li>Blog</li>
-                            </ul>
-                        </div>
-                        <div class="item">
-                            <div class="item-flex">
-                                <h5>NEWSLETTER</h5>
-                                <input type="text" placeholder="Enter Email Id">
-                                <button>Subscribe</button>
+                            <div class="gallery-item">
+                                <img src="music-images/image5.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>KRISTOFER GRECZULA</li>
+                                        <li>October 14, 2023 8:00 PM</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
                             </div>
-                            
-                        </div>
-                        <div class="item">
-                            <div class="item-flex">
-                                <h5>Contact Us</h5>
+                            <div class="gallery-item">
+                                <img src="music-images/image6.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>AGENT SIDE GRINDER + SIRI KARLSSON</li>
+                                        <li>October 14, 2023 7:30 PM</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="music-images/image7.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>STOCKHOLM SANGEET FESTIVAL 2023</li>
+                                        <li> October 15, 2023 4:00 PM</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="music-images/image8.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Disney 100
+                                            The Concert and the Hollywood Sound Orchestra</li>
+                                        <li> October 19, 2023 8:00 PM</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="music-images/image9.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>DANIEL ÖGREN</li>
+                                        <li>October 21,2023 7:30 PM</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="music-images/image10.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>JOSEFIN BJÖRK WERNER SWING ORCHESTRA</li>
+                                        <li>October 22,2023 6:00 PM</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                            <img src="music-images/image11.webp">
+                            <div class="gallery-content">
                                 <ul>
-                                    <li>hyper.evento@gmail.com</li>
-                                    <li>0987654321</li>
+                                    <li>THE ARISTOCRATS</li>
+                                    <li> October 24, 2023 8:00 PM</li>
+                                    <li><a href="">Read More</a></li> 
+                                    <li><button>GET TICKET</button></li>
                                 </ul>
-                                <div class="social-icons">
-                                    <i class="fab fa-facebook-square"></i>
-                                    <i class="fab fa-instagram-square"></i>
-                                    <i class="fab fa-twitter-square"></i>
                             </div>
-                           
-                            </div>
-                           
                         </div>
                     </div>
-                   
+                </section>
+                <section class="section">
+                    <h3 id="sports-events">Sports Events</h3>
+                    <div class="image-container" >
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <img src="sport-images/image1.webp" >
+                                <div class="gallery-content">
+                                <ul>
+                                    <li>Djurgården Hockey</li>
+                                    <li> October 11, 2023 - February 28, 2024</li>
+                                    <li><a href="">Read More</a></li> 
+                                    <li><button>GET TICKET</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                            <div class="gallery-item">
+                                <img src="sport-images/image2.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>SVERIGE – MOLDOVA</li>
+                                        <li> October 12, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="sport-images/image3.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>AIK Hockey</li>
+                                        <li> October 18, 2023 - March 8, 2024</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="sport-images/image4.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Djurgården Fotboll</li>
+                                        <li> October 22 - November 4, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="sport-images/image5.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>AIK FOTBOLL</li>
+                                        <li> October 29 - November 12, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="sport-images/image6.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Hammarby Fotboll</li>
+                                        <li> October 30 - November 12, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="sport-images/image7.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Superior Challenge 26</li>
+                                        <li> November 4, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3 id="comedy-events">Comedy/talk Events</h3>
+                    <div class="image-container" >
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <img src="comedy-images/image1.webp" >  
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>RAW 20 år</li>
+                                        <li> October 21, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="comedy-images/image2.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>JONAS ERIKSSON, KORTHUSET</li>
+                                        <li> October 23, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="comedy-images/image3.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>JOSH WOLF</li>
+                                        <li> November 5, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="comedy-images/image4.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Ricky Gervais</li>
+                                        <li> November 9, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="comedy-images/image5.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>ALLA KÄNNER ANKAN</li>
+                                        <li> November 10 - November 11, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="comedy-images/image6.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>CARL-EINAR HÄCKNER</li>
+                                        <li> November 17 - November 18, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="comedy-images/image7.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>Skäringer & Nessvold</li>
+                                        <li> November 24, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="comedy-images/image8.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>KEVIN JAMES THORNTON</li>
+                                        <li> December 5, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="comedy-images/image9.webp">
+                                <div class="gallery-content">
+                                    <ul>
+                                        <li>THE FREDRIK STRAGE FESTIVAL TOUR</li>
+                                        <li> December 16, 2023</li>
+                                        <li><a href="">Read More</a></li> 
+                                        <li><button>GET TICKET</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!--footer starts here-->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="video">
+                <iframe  src="https://www.youtube.com/embed/SJxDKy-JfQM?si=Ue_mtGVXVB1g0Azh" width="1000" height="660" class="responsive-iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-item">
+                        <h5>Created By Shandiya Ravichandran <i class="far fa-grin-alt"></i></h3>
+                    </div>
+                    <div class="footer-item">
+                        <h5>Follow Us On </h5>
+                        <div class="social-icons">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-instagram-square"></i>
+                            <i class="fab fa-twitter-square"></i>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <h5>Join Our NEWSLETTER</h5>
+                        <input type="email" id="email" placeholder="Enter Email Id">
+                        <input type="submit" id="footer-btn">
+                    </div>
                 </div>
-           </footer>
-        </body>
-        </html>
-            
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+                
+               
+                
+                
            
-            
             
