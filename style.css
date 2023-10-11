@@ -147,7 +147,7 @@ animation: glow 1s ease infinite;
   }
 }
 
-@media (max-width:680px)
+@media (max-width:690px)
 {
   .check-btn{
     display:block;
